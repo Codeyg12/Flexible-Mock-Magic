@@ -1,7 +1,10 @@
 /* BASE STYLES */
 * {
     font-family: sans-serif;
-    font-size: 20px
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .navbar {
     width: 100vw;
@@ -78,3 +81,38 @@ footer {
 }
 
 /* CODE YOUR FLEXBOXES HERE */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.flex-main {
+    display: flex;
+    flex-grow: 0 1 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container:nth-child(3n + 2) {
+    flex-grow: 2;
+}
